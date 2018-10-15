@@ -45,7 +45,7 @@ export default class Game{
             case GameState.Q1:
                 if(sInput.toLowerCase().match(answer)){
                     sReply = "you won!!!"
-                }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+                }else if(sInput.toLowerCase().match("hint") && count <= 2){
                     count++;
                     sReply = hints[count];
                 }else{
@@ -58,7 +58,7 @@ export default class Game{
             case GameState.Q2:
             if(sInput.toLowerCase().match(answer)){
                 sReply = "you won!!!"
-                 }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
                 count++;
                 sReply = hints[count];
                  }else{
@@ -70,7 +70,7 @@ export default class Game{
             case GameState.Q3:
                  if(sInput.toLowerCase().match(answer)){
                   sReply = "you won!!!"
-                }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+                }else if(sInput.toLowerCase().match("hint") && count <= 2){
                   count++;
                    sReply = hints[count];
                 }else{
@@ -82,7 +82,7 @@ export default class Game{
             case GameState.Q4:
                 if(sInput.toLowerCase().match(answer)){
                  sReply = "you won!!!"
-                }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+                }else if(sInput.toLowerCase().match("hint") && count <= 2){
                   count++;
                   sReply = hints[count];
                 }else{
@@ -94,7 +94,7 @@ export default class Game{
              case GameState.Q5:
                 if(sInput.toLowerCase().match(answer)){
                  sReply = "you won!!!"
-                }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+                }else if(sInput.toLowerCase().match("hint") && count <= 2){
                   count++;
                   sReply = hints[count];
                 }else{
@@ -106,7 +106,7 @@ export default class Game{
              case GameState.Q6:
              if(sInput.toLowerCase().match(answer)){
               sReply = "you won!!!"
-             }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+             }else if(sInput.toLowerCase().match("hint") && count <= 2){
                count++;
                sReply = hints[count];
              }else{
@@ -118,7 +118,7 @@ export default class Game{
           case GameState.Q7:
           if(sInput.toLowerCase().match(answer)){
            sReply = "you won!!!"
-          }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+          }else if(sInput.toLowerCase().match("hint") && count <= 2){
             count++;
             sReply = hints[count];
           }else{
@@ -131,7 +131,7 @@ export default class Game{
        case GameState.Q8:
        if(sInput.toLowerCase().match(answer)){
         sReply = "you won!!!"
-       }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+       }else if(sInput.toLowerCase().match("hint") && count <= 2){
          count++;
          sReply = hints[count];
        }else{
@@ -143,7 +143,7 @@ export default class Game{
     case GameState.Q9:
     if(sInput.toLowerCase().match(answer)){
      sReply = "you won!!!"
-    }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+    }else if(sInput.toLowerCase().match("hint") && count <= 2){
       count++;
       sReply = hints[count];
     }else{
@@ -155,7 +155,7 @@ export default class Game{
  case GameState.Q10:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -168,7 +168,7 @@ break;
 case GameState.Q11:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -181,7 +181,7 @@ break;
 case GameState.Q12:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -193,7 +193,7 @@ break;
 case GameState.Q13:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -205,8 +205,8 @@ break;
 case GameState.Q14:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
-   count++;
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
+   count++;count
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -218,7 +218,7 @@ break;
 case GameState.Q15:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -231,7 +231,7 @@ break;
 case GameState.Q16:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -244,7 +244,7 @@ break;
 case GameState.Q17:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -256,7 +256,7 @@ break;
 case GameState.Q18:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
@@ -269,7 +269,7 @@ break;
 case GameState.Q19:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
- }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+ }else if(sInput.toLowerCase().match("hint") && count <= 2){
    count++;
    sReply = hints[count];
  }else{
