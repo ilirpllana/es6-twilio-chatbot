@@ -33,11 +33,11 @@ export default class Game{
         let sReply = "";
         var answer = "kit kat";
         var count = -1;
-        var hints = "square chocolate in red, used a lot in trick and treat";
+        var hints = "square chocolate in red, it is used a lot in trick and treat";
 
         switch(this.stateCur){
             case GameState.WELCOMING:
-                 sReply = "Guess what candy am I thinking?... You type hint a get a hint in 19 attempts!!!";
+                 sReply = "Guess what candy am I thinking?... type hint to see details in 19 attempts!!!";
                 this.stateCur = GameState.Q1;
                 break;
 
