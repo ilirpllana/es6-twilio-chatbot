@@ -1,7 +1,7 @@
 const GameState = Object.freeze({
     WELCOMING:   Symbol("welcoming"),
-    STICK:  Symbol("stick"),
-    PLAY: Symbol("play")
+    Q1:  Symbol("Q1"),
+    Q2: Symbol("Q2")
 });
 
 export default class Game{
@@ -11,27 +11,42 @@ export default class Game{
     
     makeAMove(sInput)
     {
-        let sReply = "Hi I'm spot (a dog). Oh look a stick. Do you play or keep on walking?";
+        let sReply = "";
+        var answer = "soccer";
+        var count = -1;
+        var hints = ["its a sport","you play it", "its about balls"];
+
         switch(this.stateCur){
             case GameState.WELCOMING:
-                this.stateCur = GameState.STICK;
+                 sReply = "Guess what am I thinking?";
+                this.stateCur = GameState.Q1;
                 break;
-            case GameState.STICK:
-                if(sInput.toLowerCase().match("play")){
-                    sReply = "Great my favourite game ... Here's the stick back. Do you throw it again?"
-                    this.stateCur = GameState.PLAY;
+
+
+            case GameState.Q1:
+                if(sInput.toLowerCase().match(answer)){
+                    sReply = "you win!!!"
+                }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+                    count++;
+                    sReply = hints[count];
                 }else{
-                    sReply = "Walking is my favourite. Oh look a stick! Do you play or keep on walking?";
+                    sReply = "try again";
+                    this.stateCur = GameState.Q2;
                 }
-                break;
-            case GameState.PLAY:
-                if(sInput.toLowerCase().match("yes")){
-                    sReply = "Here it is! I got it for you. Do you toss it again.... Please? ";
-                }else{
-                    sReply = "Walking is my favourite. Oh look a stick! Do you play or keep on walking?";
-                    this.stateCur = GameState.STICK;
-                }
-                break;
+             break;
+
+             
+            case GameState.Q2:
+            if(sInput.toLowerCase().match(answer)){
+                sReply = "you win!!!"
+            }else if(sInput.toLowerCase().match("hint") && hints <= 2){
+                count++;
+                sReply = hints[count];
+            }else{
+                sReply = "try again";
+            }
+         break;
+
         }
         return(sReply);
     }
