@@ -46,7 +46,7 @@ export default class Game{
                 if(sInput.toLowerCase().match(answer)){
                     sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                    count++;
+                    count = count+1;
                     sReply = hints[count];
                 }else{
                     sReply = "try again";
@@ -59,7 +59,7 @@ export default class Game{
             if(sInput.toLowerCase().match(answer)){
                 sReply = "you won!!!"
                  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                count++;
+                    count = count+1;
                 sReply = hints[count];
                  }else{
                 sReply = "try again";
@@ -71,7 +71,7 @@ export default class Game{
                  if(sInput.toLowerCase().match(answer)){
                   sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                  count++;
+                    count = count+1;
                    sReply = hints[count];
                 }else{
                    sReply = "try again";
@@ -83,7 +83,7 @@ export default class Game{
                 if(sInput.toLowerCase().match(answer)){
                  sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                  count++;
+                    count = count+1;
                   sReply = hints[count];
                 }else{
                   sReply = "try again";
@@ -95,7 +95,7 @@ export default class Game{
                 if(sInput.toLowerCase().match(answer)){
                  sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                  count++;
+                    count = count+1;
                   sReply = hints[count];
                 }else{
                   sReply = "try again";
@@ -107,7 +107,7 @@ export default class Game{
              if(sInput.toLowerCase().match(answer)){
               sReply = "you won!!!"
              }else if(sInput.toLowerCase().match("hint") && count <= 2){
-               count++;
+                count = count+1;
                sReply = hints[count];
              }else{
                sReply = "try again";
@@ -119,7 +119,7 @@ export default class Game{
           if(sInput.toLowerCase().match(answer)){
            sReply = "you won!!!"
           }else if(sInput.toLowerCase().match("hint") && count <= 2){
-            count++;
+            count = count+1;
             sReply = hints[count];
           }else{
             sReply = "try again";
@@ -132,7 +132,7 @@ export default class Game{
        if(sInput.toLowerCase().match(answer)){
         sReply = "you won!!!"
        }else if(sInput.toLowerCase().match("hint") && count <= 2){
-         count++;
+        count = count+1;
          sReply = hints[count];
        }else{
          sReply = "try again";
@@ -144,7 +144,7 @@ export default class Game{
     if(sInput.toLowerCase().match(answer)){
      sReply = "you won!!!"
     }else if(sInput.toLowerCase().match("hint") && count <= 2){
-      count++;
+        count = count+1;
       sReply = hints[count];
     }else{
       sReply = "try again";
@@ -156,7 +156,7 @@ export default class Game{
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -169,7 +169,7 @@ case GameState.Q11:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -182,7 +182,7 @@ case GameState.Q12:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -194,7 +194,7 @@ case GameState.Q13:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -206,7 +206,7 @@ case GameState.Q14:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;count
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -219,7 +219,7 @@ case GameState.Q15:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -232,7 +232,7 @@ case GameState.Q16:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -245,7 +245,7 @@ case GameState.Q17:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -257,7 +257,7 @@ case GameState.Q18:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "try again";
@@ -270,7 +270,7 @@ case GameState.Q19:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-   count++;
+    count = count+1;
    sReply = hints[count];
  }else{
    sReply = "You lost";
