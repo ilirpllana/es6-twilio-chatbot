@@ -31,13 +31,13 @@ export default class Game{
     makeAMove(sInput)
     {
         let sReply = "";
-        var answer = "soccer";
+        var answer = "kit kat";
         var count = -1;
-        var hints = ["its a sport","you play it", "it's popular"];
+        var hints = "square chocolate in red, used a lot in trick and treat";
 
         switch(this.stateCur){
             case GameState.WELCOMING:
-                 sReply = "Guess what am I thinking?... You get 3 hints in 19 attempts!!!";
+                 sReply = "Guess what candy am I thinking?... You type hint a get a hint in 19 attempts!!!";
                 this.stateCur = GameState.Q1;
                 break;
 
@@ -46,8 +46,8 @@ export default class Game{
                 if(sInput.toLowerCase().match(answer)){
                     sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                    count = count+1;
-                    sReply = hints[count];
+
+                    sReply = hints;
                 }else{
                     sReply = "try again";
                     this.stateCur = GameState.Q2;
@@ -59,8 +59,7 @@ export default class Game{
             if(sInput.toLowerCase().match(answer)){
                 sReply = "you won!!!"
                  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                    count = count+1;
-                sReply = hints[count];
+                    sReply = hints;
                  }else{
                 sReply = "try again";
                 this.stateCur = GameState.Q3;
@@ -71,8 +70,7 @@ export default class Game{
                  if(sInput.toLowerCase().match(answer)){
                   sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                    count = count+1;
-                   sReply = hints[count];
+                    sReply = hints;
                 }else{
                    sReply = "try again";
                   this.stateCur = GameState.Q4;
@@ -83,8 +81,7 @@ export default class Game{
                 if(sInput.toLowerCase().match(answer)){
                  sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                    count = count+1;
-                  sReply = hints[count];
+                    sReply = hints;
                 }else{
                   sReply = "try again";
                   this.stateCur = GameState.Q5;
@@ -95,8 +92,7 @@ export default class Game{
                 if(sInput.toLowerCase().match(answer)){
                  sReply = "you won!!!"
                 }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                    count = count+1;
-                  sReply = hints[count];
+                    sReply = hints;
                 }else{
                   sReply = "try again";
                   this.stateCur = GameState.Q6;
@@ -107,8 +103,7 @@ export default class Game{
              if(sInput.toLowerCase().match(answer)){
               sReply = "you won!!!"
              }else if(sInput.toLowerCase().match("hint") && count <= 2){
-                count = count+1;
-               sReply = hints[count];
+                sReply = hints;
              }else{
                sReply = "try again";
                this.stateCur = GameState.Q7;
@@ -119,8 +114,7 @@ export default class Game{
           if(sInput.toLowerCase().match(answer)){
            sReply = "you won!!!"
           }else if(sInput.toLowerCase().match("hint") && count <= 2){
-            count = count+1;
-            sReply = hints[count];
+            sReply = hints;
           }else{
             sReply = "try again";
             this.stateCur = GameState.Q8;
@@ -132,8 +126,7 @@ export default class Game{
        if(sInput.toLowerCase().match(answer)){
         sReply = "you won!!!"
        }else if(sInput.toLowerCase().match("hint") && count <= 2){
-        count = count+1;
-         sReply = hints[count];
+        sReply = hints;
        }else{
          sReply = "try again";
          this.stateCur = GameState.Q9;
@@ -144,8 +137,7 @@ export default class Game{
     if(sInput.toLowerCase().match(answer)){
      sReply = "you won!!!"
     }else if(sInput.toLowerCase().match("hint") && count <= 2){
-        count = count+1;
-      sReply = hints[count];
+        sReply = hints;
     }else{
       sReply = "try again";
       this.stateCur = GameState.Q10;
@@ -156,8 +148,7 @@ export default class Game{
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q11;
@@ -169,8 +160,7 @@ case GameState.Q11:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q12;
@@ -182,8 +172,7 @@ case GameState.Q12:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q13;
@@ -194,8 +183,7 @@ case GameState.Q13:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q14;
@@ -206,8 +194,7 @@ case GameState.Q14:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q15;
@@ -219,8 +206,7 @@ case GameState.Q15:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q16;
@@ -232,8 +218,7 @@ case GameState.Q16:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q17;
@@ -245,8 +230,7 @@ case GameState.Q17:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q18;
@@ -257,8 +241,7 @@ case GameState.Q18:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "try again";
    this.stateCur = GameState.Q19;
@@ -270,8 +253,7 @@ case GameState.Q19:
  if(sInput.toLowerCase().match(answer)){
   sReply = "you won!!!"
  }else if(sInput.toLowerCase().match("hint") && count <= 2){
-    count = count+1;
-   sReply = hints[count];
+    sReply = hints;
  }else{
    sReply = "You lost";
  } 
